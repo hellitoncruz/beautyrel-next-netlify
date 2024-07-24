@@ -24,9 +24,7 @@ const Layout: FC<LayoutProps> =  ({ children }) => {
         <>
           <main>{children}</main>
           <Footer />
-          <Script src="https://code.jquery.com/jquery-3.6.0.min.js" strategy="beforeInteractive" />
-          <Script src="js/core.min.js" strategy="afterInteractive" />
-          <Script src="js/script.js" strategy="afterInteractive" />
+          
         </>
         )
       }

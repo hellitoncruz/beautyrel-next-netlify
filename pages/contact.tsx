@@ -1,6 +1,7 @@
 import Footer from "@/components/Footer";
 import Head from "next/head";
 import Layout from "@/components/Layout";
+import Script from "next/script";
 
 export default function Home() {
   return (
@@ -213,7 +214,9 @@ export default function Home() {
           </div>
         </section>
       </Layout>
-
+      <Script src="https://code.jquery.com/jquery-3.6.0.min.js" strategy="beforeInteractive" />
+          <Script src="js/core.min.js" strategy="afterInteractive" />
+          <Script src="js/script.js" strategy="afterInteractive" />
     </>
 
   );
